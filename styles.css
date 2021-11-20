@@ -1,0 +1,241 @@
+html, body {
+  background-color: Ivory;
+  height: 100%;
+  min-height: 930px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  text-align:center;
+  background-color: LightSkyBlue;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h4 {
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  width: 370px;
+  display: block;
+  float: left;
+}
+
+#player_header {
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+#ai_header {
+  margin-left: 80px;
+  margin-right: 10px;
+}
+
+p {
+  width: 133px;
+  height: 34px;
+  line-height: 34px;
+  text-align:center;
+  display: block;
+  float: right;
+  font-weight: bold;
+  margin: 0;
+}
+
+.instruction {
+  width: 834px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.instruction div {
+  width: 270px;
+  height: 40px;
+}
+
+.instruction table {
+  float: left;
+}
+
+.button {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+ background-color: DarkTurquoise;
+  cursor: pointer;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  background-color: DodgerBlue;
+  margin-right: 20px;
+  border: 1px solid DarkBlue;
+}
+
+.message {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.message_text {
+  width: 600px;
+  height: 80px;
+  line-height: 80px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  border: 1px solid DarkBlue;
+  background-color: AntiqueWhite;
+}
+
+#text {
+  width: 80%;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 80px;
+  text-align:center;
+  font-weight: bold;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align:center;
+  padding: 0;
+  padding-right: 20px;
+  font-family: sans-serif;
+}
+
+.close:hover, .close:focus {
+  cursor: pointer;
+}
+
+.playfield {
+  width: 920px;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.left {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.right {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: LightSeaGreen;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  position: absolute;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: PaleTurquoise;
+}
+
+th {
+  width: 30px;
+  height: 30px;
+  background-color: Ivory;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#ai_game_on td:hover {
+  background-color: Cyan;
+}
+
+#player_set td.free:hover {
+  background-color: Cyan;
+}
+
+.ship, .ship_instruction {
+  background-color: SaddleBrown;
+}
+
+.available_cell {
+}
+
+.availbale_ship_cell {
+  background-color: LightGreen;
+}
+
+.availbale_ship_cell:hover {
+  background-color: MediumSpringGreen;
+}
+
+.border_zone {
+  background-color: #ff8c8c;
+}
+
+.ship_ai {
+}
+
+.available_cell_ai {
+}
+
+.border_zone_ai {
+}
+
+.border_cell {
+  background-color: Silver;
+}
+
+.hit {
+}
+
+.miss {
+}
+
+.left .miss {
+  background-color: LightGray;
+}
