@@ -13,11 +13,22 @@ function isFieldPlaceExists(table_id) {
   return table != null;
 }
 
+function isProperField(element) {
+  return true;
+}
+
 function createField(table_id) {
   
-  let result = isFieldPlaceExists(table_id) && !isFieldExists(table_id);
+  //let result = isFieldPlaceExists(table_id) && !isFieldExists(table_id);
+
+
+    let element = document.getElementById(table_id);
+    let result = isProperField(element);
   
-  return result;
+    return result;
+  
+
+  //return result;
 
   // let created = false;
   //
