@@ -2,20 +2,20 @@
 
 //const classnamePlayerFieldCell = "player_cell";
 
-function isField(table_id) {
+function isFieldExists(table_id) {
   const table = document.getElementById(table_id);
   const cells = table.getElementsByTagName('th');
   return cells.length > 0;
 }
 
-function isFieldPlace(table_id) {
+function isFieldPlaceExists(table_id) {
   const table = document.getElementById(table_id);
   return table != null;
 }
 
 function createField(table_id) {
   
-  let result = isFieldPlace(table_id) && !isField(table_id);
+  let result = isFieldPlaceExists(table_id) && !isFieldExists(table_id);
   
   return result;
 
