@@ -57,16 +57,16 @@ describe("Check if there is a field to play", function(){
     let table = addTable(table_id);
     const table_cell = document.createElement('th');
     table.appendChild(table_cell);
-    
+
     it("returns true", function() {
       expect(isFieldExists(table_id)).toBe(true);
     });
   })
-  
+
 });
 
 describe("Check if there is a place for a field", function(){
-   
+
   describe("if there is no one", function(){
     let table_id = "place_not_exist_test";
     it("returns false", function(){

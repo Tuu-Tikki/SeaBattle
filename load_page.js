@@ -1,7 +1,42 @@
 "use strict";
 
-//const classnamePlayerFieldCell = "player_cell";
+class Player()
+{
+  constructor(type)
+  {
+    this.type = type;
+    shipAmount = 0;
+  }
 
+  shoot()
+  {
+
+  }
+
+  increaseShipAmount()
+  {
+
+  }
+
+  decreaseShipAmount()
+  {
+    
+  }
+}
+
+class Gamefield()
+{
+  constructor(size, type)
+  {
+    this.size = size;
+    this.type = type;
+  }
+
+  draw()
+  {
+
+  }
+}
 function isFieldExists(table_id) {
   const table = document.getElementById(table_id);
   const cells = table.getElementsByTagName('th');
@@ -18,15 +53,14 @@ function isProperField(element) {
 }
 
 function createField(table_id) {
-  
-  //let result = isFieldPlaceExists(table_id) && !isFieldExists(table_id);
 
+  //let result = isFieldPlaceExists(table_id) && !isFieldExists(table_id);
 
     let element = document.getElementById(table_id);
     let result = isProperField(element);
-  
+
     return result;
-  
+
 
   //return result;
 
@@ -51,4 +85,3 @@ function createField(table_id) {
   //
   // return created;
 }
-
