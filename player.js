@@ -1,6 +1,6 @@
 "use strict";
 
-class Player()
+class Player
 {
   constructor(type)
   {

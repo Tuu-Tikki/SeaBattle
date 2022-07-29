@@ -1,6 +1,6 @@
 "use strict";
 
-class Ship()
+class Ship
 {
   constructor(size, direction)
   {

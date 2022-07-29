@@ -1,6 +1,6 @@
 "use strict";
 
-class Cell()
+class Cell
 {
   constructor(coordinates)
   {
