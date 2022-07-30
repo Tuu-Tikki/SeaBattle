@@ -2,29 +2,47 @@
 
 class Gamefield
 {
+  #size;
+  #type;
+
   constructor(size, type)
   {
-    this.size = size;
-    this.type = type;
+    this.#size = size;
+    this.#type = type;
   }
 
   draw()
   {
-    const field = document.getElementById(this.type);
-    const topLine = document.createElement("tr");
-    field.appendChild(topLine);
+    const field = document.getElementById(this.#type);
 
-    let name = " ";
-    for (let i = 0; i <= this.size; i++)
+    for (let i = 0; i <= this.#size; i++)
     {
-      const topCell = document.createElement("th");
-      if (i > 0)
+      const row = document.createElement("tr");
+      field.appendChild(row);
+
+      for (let j = 0; j <= this.#size; j++)
       {
-        name = String.fromCharCode(i + 96);
+        let cell;
+        let header;
+
+        if (i == 0)
+        {
+          let columnHeader = " ";
+          j == 0 ? " " : columnHeader = String.fromCharCode(j + 96);
+          header = document.createTextNode(columnHeader);
+          cell = document.createElement("th");
+        }
+        else
+        {
+          let rowHeader = " ";
+          j == 0 ? rowHeader = i : " ";
+          header = document.createTextNode(rowHeader);
+          j > 0 ? cell = document.createElement("td") : cell = document.createElement("th");
+        }
+        
+        row.appendChild(cell);
+        cell.appendChild(header);
       }
-      const topCellName = document.createTextNode(name);
-      topLine.appendChild(topCell);
-      topCell.appendChild(topCellName);
     }
   }
 }
