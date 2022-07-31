@@ -39,10 +39,27 @@ class Gamefield
           header = document.createTextNode(rowHeader);
           j > 0 ? cell = document.createElement("td") : cell = document.createElement("th");
         }
-        
+
         row.appendChild(cell);
         cell.appendChild(header);
       }
     }
+  }
+
+  isPlaceForItExist()
+  {
+    const gamefieldTable = document.getElementById(this.#type);
+    if(gamefieldTable != null)
+    { gamefieldTable.tagName == "TABLE" ? true : false; }
+    return false;
+  }
+
+  isDrawn()
+  {
+    if(this.isPlaceForItExist() )
+    {
+      if (gamefieldTable.getElementsByTagName("tr").length == this.#size) {return true;}
+    }
+    return false;
   }
 }

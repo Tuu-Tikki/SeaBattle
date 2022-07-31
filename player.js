@@ -2,10 +2,13 @@
 
 class Player
 {
+  #type;
+  #shipAmount;
+
   constructor(type)
   {
-    this.type = type;
-    shipAmount = 0;
+    this.#type = type;
+    this.#shipAmount = 0;
   }
 
   shoot()
@@ -15,11 +18,11 @@ class Player
 
   increaseShipAmount()
   {
-
+    this.#shipAmount++;
   }
 
   decreaseShipAmount()
   {
-
+    this.#shipAmount > 0 ? this.#shipAmount-- : this.#shipAmount = 0;
   }
 }
