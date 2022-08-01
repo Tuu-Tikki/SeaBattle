@@ -17,9 +17,4 @@ class Ship
   {
     this.#health > 0 ? this.#health-- : this.#health = 0;
   }
-
-  placeOnField()
-  {
-
-  }
 }

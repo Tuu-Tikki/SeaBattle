@@ -1,7 +1,7 @@
 
 describe("Draw a gamefield", function() {
-  
-  const field = new Gamefield(10, "test");
+
+  const field = new Gamefield(10, "player");
   it("returns true if there is a place for the gamefield", function(){
     expect(field.isPlaceForItExist()).toBe(true);
   });

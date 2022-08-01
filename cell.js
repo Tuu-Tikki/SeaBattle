@@ -5,6 +5,6 @@ class Cell
   constructor(coordinates)
   {
     this.coordinates = coordinates;
-    this.firedUpon = UNSHOT;
+    this.firedUpon = 0;
   }
 }
